@@ -14,15 +14,21 @@ npm install --save chatseller
 
 ```jsx
 import React, { Component } from 'react'
+import {Chatseller} from 'chatseller'
+import 'chatseller/dist/index.css';
 
-import MyComponent from 'chatseller'
-import 'chatseller/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+   let key = "x5u76ussvqdc" // replace with you key
+  return(
+    <div>
+        ....
+       <Chatseller secretkey={key} />  
+    </div>
+    )
 }
+
+export default App
 ```
 
 ## License
